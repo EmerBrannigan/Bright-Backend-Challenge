@@ -7,6 +7,21 @@ namespace Checkout
 {
     public class PricingRates
     {
-        
+        public string Sku { get; }
+        public int UnitPrice { get; }
+        public int? Quantity { get; }
+        public int? SpecialPrice { get; }
+
+        public PricingRates(
+            string sku,
+            int unitPrice,
+            int? quantity = null,
+            int? specialPrice = null)
+        {
+            Sku = sku;
+            UnitPrice = unitPrice;
+            Quantity = quantity;
+            SpecialPrice = specialPrice;
+        }
     }
 }
