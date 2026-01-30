@@ -1,6 +1,6 @@
 ﻿namespace Checkout;
 
-public class Class1
+public class Checkout : ICheckout
 {
 
 }
