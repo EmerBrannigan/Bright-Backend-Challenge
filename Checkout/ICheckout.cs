@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Checkout
 {
-    public class ICheckout
+    public interface ICheckout
     {
         void Scan(string item);
         int GetTotalPrice();
