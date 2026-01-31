@@ -57,6 +57,10 @@ public class Checkout : ICheckout
                 {
                     totalPrice += quantity * pricingRate.UnitPrice;
                 }
+
+                if (Quantity <= 0 || specialPrice <= 0)
+                throw new ArgumentException("Invalid special pricing");
+
             }
         }
 
