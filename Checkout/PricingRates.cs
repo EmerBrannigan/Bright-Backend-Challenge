@@ -12,11 +12,7 @@ namespace Checkout
         public int? Quantity { get; }
         public int? SpecialPrice { get; }
 
-        public PricingRates(
-            string sku,
-            int unitPrice,
-            int? quantity = null,
-            int? specialPrice = null)
+        public PricingRule(string sku, int unitPrice, int? quantity = null, int? specialPrice = null)
         {
             Sku = sku;
             UnitPrice = unitPrice;
